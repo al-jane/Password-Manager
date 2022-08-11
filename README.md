@@ -10,6 +10,7 @@ Password Manager using python, tkinter and sqlite.
 - :o: Copy paste feature
 - :o: that stupid bracket that keeps popping on the listbox
 - :o: scrollable when displaying user data
+- :o: compile and turn it into exe file.
 
 ## Installation
 Don't. It's unstable. Please wait until I fixed some loop holes and bugs :)
