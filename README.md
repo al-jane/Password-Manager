@@ -15,5 +15,13 @@ Password Manager using python, tkinter and sqlite.
 ## Installation
 Don't. It's unstable. Please wait until I fixed some loop holes and bugs :)
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/84307128/184152062-cd6e6ca4-43c3-44ae-aebb-874da06248ce.png)
+
+
+ ![image](https://user-images.githubusercontent.com/84307128/184152224-4c1cb848-9d5d-473d-bc65-252b15deb7f5.png)
+
+
 
 
