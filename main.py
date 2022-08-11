@@ -112,7 +112,7 @@ def window():
 		passwd.state('zoomed')
 		passwd.title("PASSWORD MANAGER")
 		passwd.iconbitmap('favicon.ico')
-		#passwd.iconphoto(False, photo_icon2)
+		
 
 		title_label = Label(passwd, text="USER'S DATA",font=("JMHTypewriter-Regular",30),bg="#9f8c86",
 		fg="#3b2621",padx=10,pady=5)
@@ -274,6 +274,8 @@ welcome = Tk()
 welcome.iconbitmap('favicon.ico')
 welcome.title("WELCOME")
 welcome.config(bg="#9f8c86")
+welcome.geometry("500x300")
+welcome.resizable(False,False)
 
 def reset():
 	reset = Toplevel()
@@ -459,11 +461,10 @@ Label(welcome,
 	font=("JMHTypewriter-Regular",50),
 	bg="#9f8c86",
 	fg="#3b2621").pack()
-
+	
 hello = Label(welcome,
 	text="""Let's set up things first before we proceed.
-	\nThe first password and email that you will enter here will 
-	\nalways be your password from now on.""",
+	\nEnter your password here.""",
 	font=("JMHTypewriter-Regular",10),
 	bg="#9f8c86",
 	fg="#3b2621").pack()
@@ -478,17 +479,19 @@ Label(welcome,
 new_password = Entry(welcome,
 	font=("JMHTypewriter-Regular",20),
 	bg="#9a7b78",
-	show = "*",
-	textvariable=your_password).pack()
+	show = "◦",
+	textvariable=your_password,
+	justify='center').pack()
 
 reset = Button(welcome,
-	text="reset",
+	text="reset?",
 	font=("JMHTypewriter-Regular",10),
-	bg="#9f8c86",
+	bg="#944537",
 	fg="#3b2621",
-	command=reset)
+	command=reset,
+	borderwidth=0)
 
-reset.pack()
+reset.place(x=354,y=221)
 
 
 Label(welcome,
